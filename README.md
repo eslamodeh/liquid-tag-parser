@@ -12,7 +12,7 @@ Liquid Tag parser provides a robust interface to parsing your tag syntax in a wa
 ## Installation
 
 ```ruby
-gem "liquid-tag-parser", "~> 1.9"
+gem "liquid-tag-parser", "~> 1.10"
 ```
 
 ## Usage
@@ -29,7 +29,7 @@ class MyTag < Liquid::Tag
     @tokens = tokens
     super
   end
-  
+
   def render(ctx)
     return "it worked" if @args[:myArg]
     "it didn't work"
